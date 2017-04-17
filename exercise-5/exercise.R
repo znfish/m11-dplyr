@@ -18,9 +18,9 @@ plot(dep.delay.by.month)
 
 # In which airport were the average arrival delays the highest?
 # Hint: you'll have to perform a grouping operation before summarizing your data
-arr.delay.by.month <- flights %>%  
+arr.delay.by.airport <- flights %>%  
   group_by(dest) %>% 
-  summarise(delay = mean(dep_delay, na.rm=TRUE)) %>% 
+  summarise(delay = mean(arr_delay, na.rm=TRUE)) %>% 
   arrange(-delay)
 
 
