@@ -20,8 +20,9 @@ print(colnames(pulitzer))
 # Did any value type surprise you? WHy do you think they are that type?
 print(str(pulitzer))
 
-# Add a column that contains the diffrence in changes in Daily Circulation from 2004 to 2013
-pulitzer.differnce <- mutate(pulitzer, diff.2004.2014.to.1990.2003 = 
+# Add a column in a dataframe called 'Pulitzer.Prize.Change` that contains the diffrence in changes
+# in Pulitzer Prize Winners from 2004 to 2013 and Pultizer Prize Winners from 1990 to 2003.
+Pulitzer.Prize.Change <- mutate(pulitzer, diff.2004.2014.to.1990.2003 = 
                             Pulitzer.Prize.Winners.and.Finalists..2004.2014 - 
                             Pulitzer.Prize.Winners.and.Finalists..1990.2003)
 
